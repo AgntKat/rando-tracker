@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <style type="text/css">
 
-img {
-  filter: grayscale("50%");
-}
-
+  img {
+    filter: grayscale("50%");
+  }
+  table {
+    background-color:#9B855B;
+  }
   td {
     text-align: center;
+    width:64px;
+    height:64px;
   }
-
-table {
-  
-  background-color:#9B855B;
-}
-
   img {
     filter: grayscale(100%);
+    width:48px;
+    height:48px;
   }
- </style>
- </head>
- </html>
+</style>
+</head>
+</html>
