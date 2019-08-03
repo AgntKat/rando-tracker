@@ -8,6 +8,9 @@
 //it is treated as a counter that is incremented on click, then reset after a certain point.
 //The variables are broken up into 8 groups of 8 as they appear in the rows on the tracker.
 
+//Color choices #453C3C, #877373
+var color='#877373';
+
 var sword = 0;
 var hasJar = false;
 var hasCane = false;
@@ -229,10 +232,35 @@ function changeLantern() {
 function changeBombs() {
   if(bombs==0) {
     $('#bomb').css({filter:'grayscale(0%)'});
+    $('#bomb').attr('src','images/item sprites/Bomb10.png');
     bombs++;
   }
   else if(bombs==1) {
-    $('#bomb').attr('src','images/item sprites/Remote Bombs.png');
+    $('#bomb').attr('src','images/item sprites/Bomb30.png');
+    bombs++;
+  }
+  else if(bombs==2) {
+    $('#bomb').attr('src','images/item sprites/Bomb50.png');
+    bombs++;
+  }
+  else if(bombs==3) {
+    $('#bomb').attr('src','images/item sprites/Bomb99.png');
+    bombs++;
+  }
+  else if(bombs==4) {
+    $('#bomb').attr('src','images/item sprites/Remote Bombs10.png');
+    bombs++;
+  }
+  else if(bombs==5) {
+    $('#bomb').attr('src','images/item sprites/Remote Bombs30.png');
+    bombs++;
+  }
+  else if(bombs==6) {
+    $('#bomb').attr('src','images/item sprites/Remote Bombs50.png');
+    bombs++;
+  }
+  else if(bombs==7) {
+    $('#bomb').attr('src','images/item sprites/Remote Bombs99.png');
     bombs++;
   }
   else {
@@ -789,6 +817,47 @@ function changeGreatSpinAttack() {
   }
 }
 
+function changeTransparency() {
+  var trans = ($('#transparency').val());
+  if (trans==0) {
+    items.setAttribute("style","background-color:" + color);
+  }
+  else if(trans==10) {
+    items.setAttribute("style","background-color: " + color + "E6");
+  }
+  else if (trans==20) {
+    items.setAttribute("style","background-color: " + color + "CC");
+  }
+  else if (trans==30) {
+    items.setAttribute("style","background-color: " + color + "B3");
+  }
+  else if (trans==40) {
+    items.setAttribute("style","background-color: " + color + "99");
+  }
+  else if (trans==50) {
+    items.setAttribute("style","background-color: " + color + "80");
+  }
+  else if (trans==60) {
+    items.setAttribute("style","background-color: " + color + "66");
+  }
+  else if (trans==70) {
+    items.setAttribute("style","background-color: " + color + "4D");
+  }
+  else if (trans==80) {
+    items.setAttribute("style","background-color: " + color + "33");
+  }
+  else if (trans==90) {
+    items.setAttribute("style","background-color: " + color + "1A");
+  }
+  else {
+    items.setAttribute("style","background-color: " + color + "00");
+  }
+}
+
+function changeColor() {
+  color = ($('#colorField').val());
+  items.setAttribute("style","background-color:" + color);
+}
 //This function sets up the listeners for when a user clicks on each item.
 //As with the rest of the code, it is split up into 8 groups of 8.
 function setUp() {
@@ -857,6 +926,9 @@ function setUp() {
   $('#swordBeam').click(changeSwordBeam);
   $('#perilBeam').click(changePerilBeam);
   $('#greatSpinAttack').click(changeGreatSpinAttack);
+
+  $('#change').click(changeTransparency);
+  $('#changeColor').click(changeColor);
 }
 
 $(document).ready(setUp);

@@ -9,8 +9,30 @@
 
 <body>
   <div class="container">
+    <div class="form-group-row">
+      <label for="colorField" class="col-form-label">Enter a color hexcode (e.g. #39ff14):</label>
+      <input type="text" class="form-control" name="colorField" id="colorField" />
+      <button class="btn btn-primary" id="changeColor">Change Color</button>
+    </div>
+    <div class="form-group-row">
+      <label for="transparency" class="col-form-label">Transparency:</label>
+      <select class="form-control" id="transparency">
+        <option value="0">0%</option>
+        <option value="10">10%</option>
+        <option value="20">20%</option>
+        <option value="30">30%</option>
+        <option value="40">40%</option>
+        <option value="50">50%</option>
+        <option value="60">60%</option>
+        <option value="70">70%</option>
+        <option value="80">80%</option>
+        <option value="90">90%</option>
+        <option value="100">100%</option>
+      </select>
+      	<button class="btn btn-primary" id="change">Change Transparency</button>
+    </div>
     <div id="ItemTable">
-      <table class="table table-centered">
+      <table class="table table-centered" id=items>
         <tr>
           <th colspan="8">Tracker made by cubesolver111</th>
         </tr>
