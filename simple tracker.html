@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TMC Items Tracker Concept</title>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-group-row">
+      <label for="colorField" class="col-form-label">Enter a color hexcode (e.g. #39ff14):</label>
+      <input type="text" class="form-control" name="colorField" id="colorField" />
+      <button class="btn btn-primary" id="changeColor">Change Color</button>
+    </div>
+    <div class="form-group-row">
+      <label for="transparency" class="col-form-label">Transparency:</label>
+      <select class="form-control" id="transparency">
+        <option value="0">0%</option>
+        <option value="10">10%</option>
+        <option value="20">20%</option>
+        <option value="30">30%</option>
+        <option value="40">40%</option>
+        <option value="50">50%</option>
+        <option value="60">60%</option>
+        <option value="70">70%</option>
+        <option value="80">80%</option>
+        <option value="90">90%</option>
+        <option value="100">100%</option>
+      </select>
+      	<button class="btn btn-primary" id="change">Change Transparency</button>
+    </div>
+    <div id="ItemTable">
+      <table class="table table-centered" id=items>
+        <tr>
+          <th colspan="8">Tracker made by cubesolver111</th>
+        </tr>
+        <tr>
+        </tr>
+        <tbody>
+          <tr>
+            <td><img src="images/item sprites/Smith's Sword.png" id="swords"></td>
+            <td><img src="images/item sprites/Gust Jar.png" id="jar"></td>
+            <td><img src="images/item sprites/Cane of Pacci.png" id="cane"></td>
+            <td><img src="images/item sprites/Boomerang.png" id="rang"></td>
+            <td><img src="images/item sprites/Wallet300.png" id="wallet"></td>
+          </tr>
+          <tr>
+            <td><img src="images/item sprites/Small Shield.png" id="shields"></td>
+            <td><img src="images/item sprites/Mole Mitts.png" id="mitts"></td>
+            <td><img src="images/item sprites/Flame Lantern.png" id="lantern"></td>
+            <td><img src="images/item sprites/Bomb.png" id="bomb"></td>
+            <td><img src="images/item sprites/Kinstones/Gold Kinstone (Wilds).png" id="goldWilds"></td>
+          </tr>
+          <tr>
+            <td><img src="images/item sprites/Pegasus Boots.png" id="boots"></td>
+            <td><img src="images/item sprites/Roc's Cape.png" id="cape"></td>
+            <td><img src="images/item sprites/Ocarina of Wind.png" id="ocarina"></td>
+            <td><img src="images/item sprites/Bow.png" id="bow"></td>
+            <td><img src="images/item sprites/Kinstones/Gold Kinstone (Clouds).png" id="goldClouds"></td>
+          </tr>
+          <tr>
+            <td><img src="images/item sprites/Empty Bottle.png" id="bottle"></td>
+            <td><img src="images/item sprites/Jabber Nut.png" id="jabber"></td>
+            <td><img src="images/item sprites/Wake-Up Mushroom.png" id="mushroom"></td>
+            <td><img src="images/item sprites/Lon Lon Ranch Key.png" id="llrKey"></td>
+            <td><img src="images/item sprites/Kinstones/Gold Kinstone (Falls).png" id="goldFalls"></td>
+          </tr>
+          <tr>
+            <td><img src="images/item sprites/Grip Ring.png" id="gripRing"></td>
+            <td><img src="images/item sprites/Power Bracelets.png" id="bracelets"></td>
+            <td><img src="images/item sprites/Flippers.png" id="flippers"></td>
+            <td><img src="images/item sprites/Graveyard Key.png" id="graveKey"></td>
+            <td><img src="images/item sprites/Carlov Medal.png" id="carlovMedal"></td>
+          </tr>
+          <tr>
+            <td><img src="images/item sprites/Earth Element.png" id="earth"></td>
+            <td><img src="images/item sprites/Fire Element.png" id="fire"></td>
+            <td><img src="images/item sprites/Water Element.png" id="water"></td>
+            <td><img src="images/item sprites/Wind Element.png" id="wind"></td>
+            <td><img src="images/item sprites/Kinstones/Red 3/Red Kinstone 3.png" id="r3"></td>
+          </tr>
+          <tr>
+            <td><img src="images/item sprites/Spin Attack.png" id="spinAttack"></td>
+            <td><img src="images/item sprites/Rock Breaker.png" id="rockBreaker"></td>
+            <td><img src="images/item sprites/Dash Attack.png" id="dashAttack"></td>
+            <td><img src="images/item sprites/Down Thrust.png" id="downThrust"></td>
+            <td><img src="images/item sprites/Light Arrow.png" id="lights"></td>
+          </tr>
+          <tr>
+            <td><img src="images/item sprites/Roll Attack.png" id="rollAttack"></td>
+            <td><img src="images/item sprites/Sword Beam.png" id="swordBeam"></td>
+            <td><img src="images/item sprites/Peril Beam.png" id="perilBeam"></td>
+            <td><img src="images/item sprites/Great Spin Attack.png" id="greatSpinAttack"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="simple tracker.js"></script>
+</body>
+</html>
